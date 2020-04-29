@@ -1,7 +1,8 @@
-<ion-header class="ion-no-border">
+<ion-header class="ion-no-border font">
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="login"></ion-back-button>
+    <ion-buttons slot="start" (click)="goLogin()">
+        <ion-icon name="chevron-back-outline" defaultHref="login"></ion-icon>
+      <!--<ion-back-button defaultHref="login"></ion-back-button>-->
     </ion-buttons>
     <ion-buttons slot="secondary">
       <ion-button (click)="presentModal()">
@@ -11,7 +12,7 @@
         <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>        
       </ion-button>
     </ion-buttons>
-    <ion-title class="ion-text-center text_upper">My Initiatives</ion-title>
+    <ion-title class="ion-text-center text_upper font">My Initiatives</ion-title>
   </ion-toolbar> 
   <ion-row class="header-bottom">
     <img src="../../assets/profile.svg">
@@ -21,13 +22,13 @@
 
 <ion-content>
 
-  <ion-card class="border_yellow" >
+  <ion-card class="border_yellow font" >
     <ion-card-header  class="ion-no-padding">
       <ion-item lines="none">
         <ion-avatar slot="start" (click)="goDetail()">
           <ion-img src="../../assets/profile.jpg"></ion-img>
         </ion-avatar>
-        <p>Increase the influence of customer's views</p>
+        <p class="font">Increase the influence of customer's views</p>
         <ion-icon (click)="presentModal()" src="../../assets/icon/Edit.svg" color="dark" ></ion-icon>  
         <ion-icon  src="../../assets/icon/Delete.svg" color="dark" ></ion-icon>  
       </ion-item>
@@ -48,13 +49,13 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card class="border_green" (click)="goDetail()">
+  <ion-card class="border_green font" (click)="goDetail()">
     <ion-card-header  class="ion-no-padding">
       <ion-item lines="none">
         <ion-avatar slot="start">
           <ion-img src="../../assets/profile.jpg"></ion-img>
         </ion-avatar>
-        <p>Increase the influence of customer's views</p>
+        <p class="font">Increase the influence of customer's views</p>
         <ion-icon  src="../../assets/icon/Edit.svg" color="dark" size="md"></ion-icon>  
         <ion-icon  src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon> 
       </ion-item>
@@ -75,13 +76,13 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card class="border_red" (click)="goDetail()">
+  <ion-card class="border_red font" (click)="goDetail()">
     <ion-card-header  class="ion-no-padding">
       <ion-item lines="none">
         <ion-avatar slot="start">
           <ion-img src="../../assets/profile.jpg"></ion-img>
         </ion-avatar>
-        <p>Increase the influence of customer's views</p>
+        <p class="font">Increase the influence of customer's views</p>
         <ion-icon  src="../../assets/icon/Edit.svg" color="dark" size="md"></ion-icon>  
         <ion-icon  src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon> 
       </ion-item>
@@ -102,13 +103,13 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card class="border_green" (click)="goDetail()">
+  <ion-card class="border_green font" (click)="goDetail()">
     <ion-card-header  class="ion-no-padding">
       <ion-item lines="none">
         <ion-avatar slot="start">
           <ion-img src="../../assets/profile.jpg"></ion-img>
         </ion-avatar>
-        <p>Increase the influence of customer's views</p>
+        <p class="font">Increase the influence of customer's views</p>
         <ion-icon  src="../../assets/icon/Edit.svg" color="dark" size="md"></ion-icon>  
         <ion-icon  src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon> 
       </ion-item>
@@ -129,13 +130,13 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card class="border_yellow" (click)="goDetail()">
+  <ion-card class="border_yellow font" (click)="goDetail()">
     <ion-card-header  class="ion-no-padding">
       <ion-item lines="none">
         <ion-avatar slot="start">
           <ion-img src="../../assets/profile.jpg"></ion-img>
         </ion-avatar>
-        <p>Increase the influence of customer's views</p>
+        <p class="font">Increase the influence of customer's views</p>
         <ion-icon  src="../../assets/icon/Edit.svg" color="dark" size="md"></ion-icon>  
         <ion-icon  src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon> 
       </ion-item>
@@ -156,13 +157,13 @@
     </ion-card-content>
   </ion-card>
     
-    <ion-card class="border_yellow" (click)="goDetail()">
+    <ion-card class="border_yellow font" (click)="goDetail()">
       <ion-card-header  class="ion-no-padding">
         <ion-item lines="none">
           <ion-avatar slot="start">
             <ion-img src="../../assets/profile.jpg"></ion-img>
           </ion-avatar>
-          <p>Increase the influence of customer's views</p>
+          <p class="font">Increase the influence of customer's views</p>
           <ion-icon  src="../../assets/icon/Edit.svg" color="dark" size="md"></ion-icon>  
           <ion-icon  src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon> 
         </ion-item>
@@ -182,6 +183,7 @@
         </ion-row>
       </ion-card-content>
     </ion-card>
+
 
 </ion-content>
 
