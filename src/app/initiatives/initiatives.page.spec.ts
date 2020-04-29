@@ -22,3 +22,4 @@ describe('InitiativesPage', () => {
     expect(component).toBeTruthy();
   });
 });
+

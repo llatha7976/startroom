@@ -31,3 +31,4 @@ export class InitiativeDetailPage implements OnInit {
     return await modal.present();
   }
 }
+

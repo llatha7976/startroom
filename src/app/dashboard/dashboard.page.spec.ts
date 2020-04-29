@@ -7,6 +7,7 @@ describe('DashboardPage', () => {
   let component: DashboardPage;
   let fixture: ComponentFixture<DashboardPage>;
 
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ DashboardPage ],

@@ -21,3 +21,4 @@ import { IntiativeModalpopupPage } from '../intiative-modalpopup/intiative-modal
   entryComponents: [ IntiativeModalpopupPage ]
 })
 export class InitiativesPageModule {}
+

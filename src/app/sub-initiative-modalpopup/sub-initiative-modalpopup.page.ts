@@ -24,3 +24,4 @@ export class SubInitiativeModalpopupPage implements OnInit {
   }
 
 }
+

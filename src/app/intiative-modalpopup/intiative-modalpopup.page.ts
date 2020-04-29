@@ -22,4 +22,5 @@ export class IntiativeModalpopupPage implements OnInit {
     });
   }
 
+
 }

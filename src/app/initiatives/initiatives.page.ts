@@ -23,6 +23,7 @@ export class InitiativesPage implements OnInit {
     this.route.navigate(['initiative-detail']);
   }
 
+
   // popup modal
   async presentModal() {
     const modal = await this.modalControler.create({

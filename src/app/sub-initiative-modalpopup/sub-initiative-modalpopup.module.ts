@@ -18,3 +18,4 @@ import { SubInitiativeModalpopupPage } from './sub-initiative-modalpopup.page';
   declarations: [SubInitiativeModalpopupPage]
 })
 export class SubInitiativeModalpopupPageModule {}
+

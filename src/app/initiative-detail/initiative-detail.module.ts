@@ -22,3 +22,4 @@ import {SubInitiativeModalpopupPage} from '../sub-initiative-modalpopup/sub-init
 
 })
 export class InitiativeDetailPageModule {}
+

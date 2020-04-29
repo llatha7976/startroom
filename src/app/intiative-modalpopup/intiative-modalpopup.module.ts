@@ -8,6 +8,7 @@ import { IntiativeModalpopupPageRoutingModule } from './intiative-modalpopup-rou
 
 import { IntiativeModalpopupPage } from './intiative-modalpopup.page';
 
+
 @NgModule({
   imports: [
     CommonModule,

@@ -22,3 +22,4 @@ describe('IntiativeModalpopupPage', () => {
     expect(component).toBeTruthy();
   });
 });
+
