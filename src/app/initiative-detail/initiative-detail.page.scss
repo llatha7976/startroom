@@ -130,6 +130,7 @@ ion-content{
         --color-checked: transparent;
         --color-focused: transparent;
         --indicator-color: #9bbf54;
+
     }
     ion-segment-button ion-icon{
         margin-left: -32px;
@@ -145,8 +146,8 @@ ion-content{
     margin-top: 14px;
     box-shadow: 0px 2px 4px 0px #ccc;
     border-radius: 9px;
-    border-bottom: 3px solid #20cf7d;
-    padding: 4px;
+    //border-bottom: 3px solid #20cf7d;
+    padding: 4px 4px 0px 4px;
     .profile_img_act {
         display: flex;
         align-items: center;
@@ -201,4 +202,9 @@ ion-footer{
             padding: 10px;
         }
     }
+}
+.date{
+    //padding-top: 11px;
+    /* margin-top: 11px; */
+    //float: right;
 }
