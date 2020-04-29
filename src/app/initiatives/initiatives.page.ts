@@ -17,7 +17,7 @@ export class InitiativesPage implements OnInit {
   }
 
   goLogin(){
-    this.route.navigate(['login']);
+    this.route.navigate(['dashboard']);
   }
   goDetail(){
     this.route.navigate(['initiative-detail']);

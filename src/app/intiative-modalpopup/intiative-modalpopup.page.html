@@ -19,31 +19,31 @@
                 <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>
             </ion-button>
         </ion-buttons>
-        <ion-title class="ion-text-center text_upper">Initiative Description</ion-title>
+        <ion-title class="ion-text-center text_upper font">Initiative Description</ion-title>
     </ion-toolbar>
     <ion-row class="header-bottom">
         <img src="../../assets/profile.svg">
-        <h6 class="text_upper">Human Resource</h6>
+        <h6 class="text_upper font">Human Resource</h6>
     </ion-row>
 </ion-header>
 
 
 <ion-content class="ion-padding">
-  <ion-item class="bg_input marg_bot_10" lines="none">
+  <ion-item class="bg_input marg_bot_10 font" lines="none">
         <ion-label position="stacked">ID</ion-label>
         <ion-input  inputmode="text"></ion-input>
       </ion-item>
-        <ion-item class="bg_input marg_bot_10" lines="none">
+        <ion-item class="bg_input marg_bot_10 font" lines="none">
           <ion-label position="stacked">Name</ion-label>
           <ion-input  inputmode="text"></ion-input>
         </ion-item>
-      <ion-item lines="none">
+      <ion-item lines="none" class="font">
         <ion-label position="stacked">Description</ion-label>
         <ion-textarea></ion-textarea>
       </ion-item>
 
 
-      <ion-item lines="none">
+      <ion-item lines="none" class="font">
         <ion-label  position="stacked">Owner</ion-label>
           <ion-input>
               <ion-buttons slot="end">
@@ -57,14 +57,14 @@
 
 
 
-      <ion-item lines="none">
+      <ion-item lines="none" class="font">
         <ion-label position="stacked">Planned Start Date /End Date</ion-label>
         <ion-input type="date"></ion-input>
       </ion-item>
 
 
 
-      <ion-item lines="none">
+      <ion-item lines="none" class="font">
         <ion-label position="stacked"> Actual Start Date /End Date</ion-label>
           <ion-input type="date"></ion-input>
       </ion-item>
@@ -74,8 +74,8 @@
   
   <ion-list>
     <ion-radio-group>
-        <ion-label position="stacked"> status</ion-label>
-      <ion-row>
+        <ion-label position="stacked" class="font"> status</ion-label>
+      <ion-row class="font">
         <ion-col size="4" >
           <ion-item lines="none">
             <!--<ion-label>Biff</ion-label>-->
@@ -100,7 +100,7 @@
     </ion-radio-group>
   </ion-list>
 
-    <ion-item lines="none">
+    <ion-item lines="none" class="font">
         <ion-label  position="stacked">Status</ion-label>
         <ion-input>
             <ion-buttons slot="end">
@@ -112,7 +112,7 @@
 
     </ion-item>
 
-    <ion-item class="bg_input marg_bot_10" lines="none">
+    <ion-item class="bg_input marg_bot_10" lines="none" class="font">
           <ion-label position="stacked">Progerss %</ion-label>
           <ion-input  inputmode="text"></ion-input>
         </ion-item>
@@ -125,52 +125,52 @@
 
     <ion-row>
 
-        <ion-col size="4">
+        <ion-col size="4" class="font">
           <ion-item lines="none">
             <ion-label>Actual</ion-label>
             <ion-checkbox ></ion-checkbox>
           </ion-item>
         </ion-col>
 
-        <ion-col size="4">
+        <ion-col size="4" class="font">
           <ion-item lines="none">
             <ion-label>Target</ion-label>
             <ion-checkbox ></ion-checkbox>
           </ion-item>
         </ion-col>
 
-        <ion-col size="4">
+        <ion-col size="4" class="font">
           <ion-item lines="none">
             <ion-label>Budget</ion-label>
             <ion-checkbox ></ion-checkbox>
           </ion-item>
         </ion-col>
 
-        <ion-col size="4">
+        <ion-col size="4" class="font">
           <ion-item lines="none">
             <ion-label>Forecast</ion-label>
             <ion-checkbox></ion-checkbox>
           </ion-item>
         </ion-col>
-        <ion-col size="4">
+        <ion-col size="4" class="font">
           <ion-item lines="none">
             <ion-label>Amount</ion-label>
             <ion-checkbox></ion-checkbox>
           </ion-item>
         </ion-col>
-        <ion-col size="4">
+        <ion-col size="4" class="font">
           <ion-item lines="none">
             <ion-label>Budget</ion-label>
             <ion-checkbox></ion-checkbox>
           </ion-item>
         </ion-col>
-        <ion-col size="4">
+        <ion-col size="4" class="font">
           <ion-item lines="none">
             <ion-label>Utillized</ion-label>
             <ion-checkbox></ion-checkbox>
           </ion-item>
         </ion-col>
-        <ion-col size="4">
+        <ion-col size="4" class="font">
           <ion-item lines="none">
             <ion-label>Balance</ion-label>
             <ion-checkbox></ion-checkbox>
@@ -179,7 +179,7 @@
     </ion-row>
     <ion-row>
         <ion-col>
-            <ion-item lines="none" class="ion-text-right">
+            <ion-item lines="none" class="ion-text-right font">
                 <ion-button color="light">cancel</ion-button>
                 <ion-button color="dark">Save</ion-button>
             </ion-item>

@@ -1,7 +1,7 @@
 <ion-header class="ion-no-border font">
   <ion-toolbar>
     <ion-buttons slot="start" (click)="goLogin()">
-        <ion-icon name="chevron-back-outline" defaultHref="login"></ion-icon>
+        <ion-icon class="back-outline" name="chevron-back-outline"></ion-icon>
       <!--<ion-back-button defaultHref="login"></ion-back-button>-->
     </ion-buttons>
     <ion-buttons slot="secondary">
@@ -22,10 +22,10 @@
 
 <ion-content>
 
-  <ion-card class="border_yellow font" >
+  <ion-card class="border_yellow font" (click)="goDetail()" >
     <ion-card-header  class="ion-no-padding">
       <ion-item lines="none">
-        <ion-avatar slot="start" (click)="goDetail()">
+        <ion-avatar slot="start" >
           <ion-img src="../../assets/profile.jpg"></ion-img>
         </ion-avatar>
         <p class="font">Increase the influence of customer's views</p>

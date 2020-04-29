@@ -18,7 +18,7 @@ export class InitiativeDetailPage implements OnInit {
   }
 
   goLogin(){
-    this.route.navigate(['login']);
+    this.route.navigate(['initiatives']);
   }
   goBudget(){
     this.route.navigate(['initiative-budget']);
