@@ -33,11 +33,13 @@ const routes: Routes = [
     loadChildren: () => import('./intiative-modalpopup/intiative-modalpopup.module').then( m => m.IntiativeModalpopupPageModule)
   },
   {
+    path: 'meeting',
+    loadChildren: () => import('./meeting/meeting.module').then( m => m.MeetingPageModule)
+  },
+  {
     path: 'sub-initiative-modalpopup',
     loadChildren: () => import('./sub-initiative-modalpopup/sub-initiative-modalpopup.module').then( m => m.SubInitiativeModalpopupPageModule)
-  },
-
-
+  }
 ];
 
 @NgModule({
