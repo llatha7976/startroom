@@ -4,6 +4,7 @@
         <ion-icon class="back-outline" name="chevron-back-outline" defaultHref="login"></ion-icon>
       <!--<ion-back-button defaultHref="login"></ion-back-button>-->
     </ion-buttons>
+
     <ion-buttons slot="secondary"  >
       <ion-button *ngIf="selectTabs == 'sub_initiative'" (click)="presentModal('plus')">
         <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
@@ -14,8 +15,13 @@
       <ion-button *ngIf="selectTabs == 'activity'"  (click)="activityModal('plusactivity')" >
         <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
       </ion-button>
+      <ion-button *ngIf="selectTabs == 'budget1'">
+        <ion-icon src="../../assets/icon/Edit.svg" color="light" size="small" (click)="editModal('edit')"></ion-icon>
+      </ion-button>
      
       <ion-button (click)="goLogin()">
+        <!--<ion-icon src="../../assets/icon/Edit.svg" color="light" size="small" (click)="editModal('edit')"></ion-icon>-->
+
         <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>        
       </ion-button>
     </ion-buttons>
@@ -560,7 +566,9 @@
           <ion-img src="../../assets/profile.jpg"></ion-img>
         </ion-avatar>
         <p  slot="start">Elmer Roberts</p>
-        <ion-icon name="ellipsis-vertical-outline" color="dark" size="md" slot="end"></ion-icon>
+        <ion-icon class="edit1" src="../../assets/icon/Edit.svg" color="dark" size="md"  slot="end"></ion-icon>
+
+        <!--<ion-icon name="ellipsis-vertical-outline" color="dark" size="md" slot="end"></ion-icon>-->
       </ion-item>
 
       <ion-item lines="none">
@@ -580,7 +588,9 @@
           <ion-img src="../../assets/profile.jpg"></ion-img>
         </ion-avatar>
         <p  slot="start">Elmer Roberts</p>
-        <ion-icon name="ellipsis-vertical-outline" color="dark" size="md" slot="end"></ion-icon>
+        <ion-icon class="edit1" src="../../assets/icon/Edit.svg" color="dark" size="md"  slot="end"></ion-icon>
+
+        <!--<ion-icon name="ellipsis-vertical-outline" color="dark" size="md" slot="end"></ion-icon>-->
       </ion-item>
 
       <ion-item lines="none">
@@ -600,7 +610,10 @@
           <ion-img src="../../assets/profile.jpg"></ion-img>
         </ion-avatar>
         <p  slot="start">Elmer Roberts</p>
-        <ion-icon name="ellipsis-vertical-outline" color="dark" size="md" slot="end"></ion-icon>
+        <ion-icon class="edit1" src="../../assets/icon/Edit.svg" color="dark" size="md"  slot="end"></ion-icon>
+
+
+        <!--<ion-icon name="ellipsis-vertical-outline" color="dark" size="md" slot="end"></ion-icon>-->
       </ion-item>
 
       <ion-item lines="none">
