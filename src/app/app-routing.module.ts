@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -10,7 +11,8 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },  {
+  },
+  {
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
@@ -29,7 +31,11 @@ const routes: Routes = [
   {
     path: 'intiative-modalpopup',
     loadChildren: () => import('./intiative-modalpopup/intiative-modalpopup.module').then( m => m.IntiativeModalpopupPageModule)
-  }
+  },
+  {
+    path: 'sub-initiative-modalpopup',
+    loadChildren: () => import('./sub-initiative-modalpopup/sub-initiative-modalpopup.module').then( m => m.SubInitiativeModalpopupPageModule)
+  },
 
 
 ];

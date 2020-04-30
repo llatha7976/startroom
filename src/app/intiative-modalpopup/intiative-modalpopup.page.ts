@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-intiative-modalpopup',
@@ -8,7 +9,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class IntiativeModalpopupPage implements OnInit {
 
-  constructor( private modalControler: ModalController )  { }
+  constructor( private modalControler: ModalController, public router: Router)  { }
 
   ngOnInit() {
   }
@@ -20,5 +21,6 @@ export class IntiativeModalpopupPage implements OnInit {
       'dismissed': true
     });
   }
+
 
 }

@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { InitiativeDetailPageRoutingModule } from './initiative-detail-routing.module';
 
 import { InitiativeDetailPage } from './initiative-detail.page';
+import {IntiativeModalpopupPage} from '../intiative-modalpopup/intiative-modalpopup.page';
+import {SubInitiativeModalpopupPage} from '../sub-initiative-modalpopup/sub-initiative-modalpopup.page';
 
 @NgModule({
   imports: [
@@ -15,6 +17,9 @@ import { InitiativeDetailPage } from './initiative-detail.page';
     IonicModule,
     InitiativeDetailPageRoutingModule
   ],
-  declarations: [InitiativeDetailPage]
+  declarations: [InitiativeDetailPage, SubInitiativeModalpopupPage],
+  entryComponents: [ SubInitiativeModalpopupPage ]
+
 })
 export class InitiativeDetailPageModule {}
+

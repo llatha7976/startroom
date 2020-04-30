@@ -10,6 +10,8 @@ ion-header{
         border-bottom-right-radius: 18px;
         ion-title{
             font-size: 16px;
+            margin-left: 15px;
+
         }
     }
 
@@ -25,6 +27,13 @@ ion-header{
 .plus-icon{
     font-size: 13px;
 }
+.back-outline{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 11px;
+}
+
+
 
 // header bottom
 .header-bottom{
@@ -80,7 +89,7 @@ ion-card{
     box-shadow: 0px 0px 7px -4px;
     border-left: 5px solid;
     border-radius: 9px;
-    margin-top: 16px;
+    margin-top: 5px;
     ion-row{
         padding: 0 10px;
     }
