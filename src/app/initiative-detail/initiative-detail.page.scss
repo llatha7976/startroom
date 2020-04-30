@@ -146,12 +146,17 @@ ion-content{
         //min-width: 53px;
         --color-checked: transparent;
         --color-focused: transparent;
-        --indicator-color: #9bbf54;
+        --indicator-color: #707070;
 
     }
     ion-segment-button ion-icon{
         //margin-left: -32px;
     }
+    //ion-segment-button:checked{
+    //           --color-checked: none;
+    //           --color-focused: transparent;
+    //    --border-style: 2px solid gray !important;
+    //}
 }
 
 :host(.segment-button-layout-icon-top) .button-native {

@@ -20,5 +20,7 @@ export class DashboardPage implements OnInit {
 
   goInitiative(){
     this.route.navigate(['initiatives']);
+  }gomeeting(){
+    this.route.navigate(['meeting']);
   }
 }

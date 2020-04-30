@@ -15,7 +15,7 @@
       <ion-button *ngIf="selectTabs == 'activity'"  (click)="activityModal('plusactivity')" >
         <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
       </ion-button>
-      <ion-button *ngIf="selectTabs == 'budget1'">
+      <ion-button *ngIf="selectTabs == 'budget1'" (click)="initiativemodal('editinit')">
         <ion-icon src="../../assets/icon/Edit.svg" color="light" size="small" (click)="editModal('edit')"></ion-icon>
       </ion-button>
      

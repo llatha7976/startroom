@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
+import { NgModule } from '@angular/core';
+
 
 import {IntiativeModalpopupPage} from '../intiative-modalpopup/intiative-modalpopup.page';
 
@@ -22,6 +24,7 @@ export class InitiativesPage implements OnInit {
     this.route.navigate(['dashboard']);
   }
   goDetail(){
+    // alert('1')
     this.route.navigate(['initiative-detail']);
   }
 

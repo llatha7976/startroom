@@ -5,6 +5,8 @@ import { ModalController } from '@ionic/angular';
 import {SubInitiativeModalpopupPage} from '../sub-initiative-modalpopup/sub-initiative-modalpopup.page';
 import { ActivitiesModalpopupPage} from '../activities-modalpopup/activities-modalpopup.page';
 import {MilestoneModalpopupPage} from '../milestone-modalpopup/milestone-modalpopup.page';
+import { NgModule } from '@angular/core';
+
 
 @Component({
   selector: 'app-initiative-detail',
@@ -71,6 +73,17 @@ export class InitiativeDetailPage implements OnInit {
       component: ActivitiesModalpopupPage,
       componentProps: {
         activitydata: 'plusactivity',
+      }
+    });
+    return await modal.present();
+  }
+  async initiativemodal(value) {
+    // alert('2')
+
+    const modal = await this.modalControler.create({
+      component: IntiativeModalpopupPage,
+      componentProps: {
+        iniativedata: 'editinit',
       }
     });
     return await modal.present();

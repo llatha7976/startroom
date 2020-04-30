@@ -10,6 +10,7 @@ import {Router} from '@angular/router';
 export class IntiativeModalpopupPage implements OnInit {
   @Input() data: string;
   @Input() data1: string;
+  @Input() iniativedata: string;
   public buttonTrue: boolean;
 
   constructor( private modalControler: ModalController, public router: Router)  {
