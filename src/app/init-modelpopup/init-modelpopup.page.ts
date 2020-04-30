@@ -1,16 +1,14 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import {ModalController} from '@ionic/angular';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-intiative-modalpopup',
-  templateUrl: './intiative-modalpopup.page.html',
-  styleUrls: ['./intiative-modalpopup.page.scss'],
+  selector: 'app-init-modelpopup',
+  templateUrl: './init-modelpopup.page.html',
+  styleUrls: ['./init-modelpopup.page.scss'],
 })
-export class IntiativeModalpopupPage implements OnInit {
-  @Input() data: string;
-  @Input() data1: string;
-  // @Input() iniativedata: string;
+export class InitModelpopupPage implements OnInit {
+  @Input() iniativedata: string;
   public buttonTrue: boolean;
 
   constructor( private modalControler: ModalController, public router: Router)  {
@@ -28,6 +26,8 @@ export class IntiativeModalpopupPage implements OnInit {
       'dismissed': true
     });
   }
+
+
 
 
 }

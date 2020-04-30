@@ -48,6 +48,10 @@ const routes: Routes = [
     path: 'milestone-modalpopup',
     loadChildren: () => import('./milestone-modalpopup/milestone-modalpopup.module').then( m => m.MilestoneModalpopupPageModule)
   },
+  {
+    path: 'init-modelpopup',
+    loadChildren: () => import('./init-modelpopup/init-modelpopup.module').then( m => m.InitModelpopupPageModule)
+  },
 
 
 ];
