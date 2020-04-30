@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
 
@@ -8,8 +8,13 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./sub-initiative-modalpopup.page.scss'],
 })
 export class SubInitiativeModalpopupPage implements OnInit {
+  @Input() data: string;
+  @Input() data1: string;
+  @Input() activityeditdata: string;
+  @Input() milestonedata: string;
+  @Input() activitydata: string;
 
-  constructor(public modalControler:ModalController) {
+  constructor(public modalControler: ModalController) {
   }
 
   ngOnInit() {

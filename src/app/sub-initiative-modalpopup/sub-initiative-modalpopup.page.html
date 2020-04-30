@@ -11,7 +11,11 @@
         <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title class="ion-text-center text_upper font">SubInitiative Description</ion-title>
+    <ion-title *ngIf="data" class="ion-text-center text_upper font">Add SubInitiative</ion-title>
+    <ion-title *ngIf="data1" class="ion-text-center text_upper font">Edit SubInitiative</ion-title>
+    <ion-title *ngIf="activitydata" class="ion-text-center text_upper font">Add Activities</ion-title>
+    <ion-title *ngIf="activityeditdata" class="ion-text-center text_upper font">Edit Activities</ion-title>
+    <ion-title *ngIf="milestonedata" class="ion-text-center text_upper font">Add Milestone</ion-title>
   </ion-toolbar>
   <ion-row class="header-bottom">
     <img src="../../assets/profile.svg">

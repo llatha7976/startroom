@@ -19,7 +19,8 @@
                 <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>
             </ion-button>
         </ion-buttons>
-        <ion-title class="ion-text-center text_upper font">Initiative Description</ion-title>
+        <ion-title class="ion-text-center text_upper font" *ngIf="data">Add Initiative</ion-title>
+        <ion-title class="ion-text-center text_upper font" *ngIf="data1">Edit Initiative</ion-title>
     </ion-toolbar>
     <ion-row class="header-bottom">
         <img src="../../assets/profile.svg">

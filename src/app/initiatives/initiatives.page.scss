@@ -132,4 +132,10 @@ ion-footer{
     }
 }
 
-
+ion-content{
+    ion-card{
+        .edit{
+            margin-top: -37px;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import {Router} from '@angular/router';
 
@@ -8,8 +8,14 @@ import {Router} from '@angular/router';
   styleUrls: ['./intiative-modalpopup.page.scss'],
 })
 export class IntiativeModalpopupPage implements OnInit {
+  @Input() data: string;
+  @Input() data1: string;
+  public buttonTrue: boolean;
 
-  constructor( private modalControler: ModalController, public router: Router)  { }
+  constructor( private modalControler: ModalController, public router: Router)  {
+    // console.log(data,'lathaa')
+
+  }
 
   ngOnInit() {
   }

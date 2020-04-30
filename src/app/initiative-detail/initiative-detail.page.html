@@ -4,14 +4,29 @@
         <ion-icon class="back-outline" name="chevron-back-outline" defaultHref="login"></ion-icon>
       <!--<ion-back-button defaultHref="login"></ion-back-button>-->
     </ion-buttons>
-    <ion-buttons slot="secondary">
+    <ion-buttons slot="secondary" (click)="presentModal('plus')" >
+      <ion-button *ngIf="selectTabs == 'sub_initiative'" >
+        <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="selectTabs == 'milestone'" (click)="milestoneModal('plusmiles')">
+        <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="selectTabs == 'activity'"  (click)="activityModal('plusactivity')" >
+        <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
+      </ion-button>
      
       <ion-button (click)="goLogin()">
         <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>        
       </ion-button>
     </ion-buttons>
-    <ion-title class="ion-text-center text_upper">Initiatives Detail</ion-title>
-  </ion-toolbar> 
+    <ion-title *ngIf="selectTabs == 'budget1'"  class="ion-text-center text_upper">Initiatives Detail</ion-title>
+    <ion-title *ngIf="selectTabs == 'budget'"  class="ion-text-center text_upper">Initiatives Detail</ion-title>
+    <ion-title *ngIf="selectTabs == 'sub_initiative'"  class="ion-text-center text_upper">Sub Initiatives</ion-title>
+    <ion-title *ngIf="selectTabs == 'milestone'"  class="ion-text-center text_upper">Milestone</ion-title>
+    <ion-title *ngIf="selectTabs == 'activity'"  class="ion-text-center text_upper activities">Activities</ion-title>
+    <ion-title *ngIf="selectTabs == 'chart'"  class="ion-text-center text_upper">Chart</ion-title>
+    <ion-title *ngIf="selectTabs == 'comments'"  class="ion-text-center text_upper">Comments</ion-title>
+  </ion-toolbar>
   <ion-row class="header-bottom">
     <img src="../../assets/profile.svg">
     <h6 class="text_upper">Human Resource</h6>
@@ -48,7 +63,10 @@
   </ion-tabs> -->
 
   <ion-segment   [(ngModel)]="selectTabs" class="font">
-    <ion-segment-button value="budget" >
+    <ion-segment-button value="budget1" >
+      <ion-icon src="../../assets/icon/initiative/eye-outline .svg" siz="small"></ion-icon>
+    </ion-segment-button>
+      <ion-segment-button value="budget" >
       <ion-icon src="../../assets/icon/initiative/budget.svg" siz="small"></ion-icon>
     </ion-segment-button>
     <ion-segment-button value="sub_initiative" >
@@ -257,7 +275,7 @@
             <ion-img src="../../assets/profile.jpg"></ion-img>
             <span class="more">+3</span>
 
-            <ion-icon slot="end" src="../../assets/icon/Edit.svg" size="small" (click)="presentModal()"></ion-icon>
+            <ion-icon class="edit" slot="end" src="../../assets/icon/Edit.svg" size="small" (click)="editModal('edit')"></ion-icon>
           </div>
         </ion-col>
       </ion-row>
@@ -288,7 +306,7 @@
             <ion-img src="../../assets/profile.jpg"></ion-img>
             <span class="more">+3</span>
 
-            <ion-icon slot="end" src="../../assets/icon/Edit.svg" size="small"></ion-icon>
+            <ion-icon class="edit" slot="end" src="../../assets/icon/Edit.svg" size="small" (click)="editModal('edit')"></ion-icon>
           </div>
         </ion-col>
       </ion-row>
@@ -319,7 +337,7 @@
             <ion-img src="../../assets/profile.jpg"></ion-img>
             <span class="more">+3</span>
 
-            <ion-icon slot="end" src="../../assets/icon/Edit.svg" size="small"></ion-icon>
+            <ion-icon class="edit" slot="end" src="../../assets/icon/Edit.svg" size="small" (click)="editModal('edit')"></ion-icon>
           </div>
         </ion-col>
       </ion-row>
@@ -354,7 +372,7 @@
           <ion-img src="../../assets/profile.jpg"></ion-img>
           <span class="more">+3</span>
           
-          <ion-icon slot="end" src="../../assets/icon/Edit.svg" size="small"></ion-icon>
+          <ion-icon class="edit" slot="end" src="../../assets/icon/Edit.svg" size="small" (click)="activityeditModal('edit')"></ion-icon>
           </div>
         </ion-col>
       </ion-row>
@@ -385,7 +403,7 @@
           <ion-img src="../../assets/profile.jpg"></ion-img>
           <span class="more">+3</span>
           
-          <ion-icon slot="end" src="../../assets/icon/Edit.svg" size="small"></ion-icon>
+          <ion-icon class="edit" slot="end" src="../../assets/icon/Edit.svg" size="small" (click)="activityeditModal('edit')"></ion-icon>
           </div>
         </ion-col>
       </ion-row>
@@ -416,7 +434,7 @@
           <ion-img src="../../assets/profile.jpg"></ion-img>
           <span class="more">+3</span>
           
-          <ion-icon slot="end" src="../../assets/icon/Edit.svg" size="small"></ion-icon>
+          <ion-icon class="edit" slot="end" src="../../assets/icon/Edit.svg" size="small" (click)="activityeditModal('edit')"></ion-icon>
           </div>
         </ion-col>
       </ion-row>
@@ -451,7 +469,7 @@
           <ion-img src="../../assets/profile.jpg"></ion-img>
           <span class="more">+3</span>
           
-          <ion-icon slot="end" src="../../assets/icon/Edit.svg" size="small"></ion-icon>
+          <ion-icon class="edit" slot="end" src="../../assets/icon/Edit.svg" size="small"></ion-icon>
           </div>
         </ion-col>
       </ion-row>
@@ -482,7 +500,7 @@
           <ion-img src="../../assets/profile.jpg"></ion-img>
           <span class="more">+3</span>
           
-          <ion-icon slot="end" src="../../assets/icon/Edit.svg" size="small"></ion-icon>
+          <ion-icon class="edit" slot="end" src="../../assets/icon/Edit.svg" size="small"></ion-icon>
           </div>
         </ion-col>
       </ion-row>
@@ -513,7 +531,7 @@
           <ion-img src="../../assets/profile.jpg"></ion-img>
           <span class="more">+3</span>
           
-          <ion-icon slot="end" src="../../assets/icon/Edit.svg" size="small"></ion-icon>
+          <ion-icon class="edit" slot="end" src="../../assets/icon/Edit.svg" size="small"></ion-icon>
           </div>
 
         </ion-col>

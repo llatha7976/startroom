@@ -24,9 +24,52 @@ export class InitiativeDetailPage implements OnInit {
     this.route.navigate(['initiative-budget']);
   }
   // popup modal
-  async presentModal() {
+  async presentModal(value) {
+    // alert('3')
+
     const modal = await this.modalControler.create({
       component: SubInitiativeModalpopupPage,
+      componentProps: {
+        data: 'plus',
+      }
+    });
+    return await modal.present();
+  }
+  async editModal(value) {
+    const modal = await this.modalControler.create({
+      component: SubInitiativeModalpopupPage,
+      componentProps: {
+        data1: 'edit',
+      }
+    });
+    return await modal.present();
+  }
+  async activityeditModal(value) {
+    const modal = await this.modalControler.create({
+      component: SubInitiativeModalpopupPage,
+      componentProps: {
+        activityeditdata: 'edit',
+      }
+    });
+    return await modal.present();
+  }
+  async milestoneModal(value) {
+    // alert('1')
+    const modal = await this.modalControler.create({
+      component: SubInitiativeModalpopupPage,
+      componentProps: {
+        milestonedata: 'plusmiles',
+      }
+    });
+    return await modal.present();
+  }async activityModal(value) {
+    // alert('2')
+
+    const modal = await this.modalControler.create({
+      component: SubInitiativeModalpopupPage,
+      componentProps: {
+        activitydata: 'plusactivity',
+      }
     });
     return await modal.present();
   }
