@@ -6,12 +6,12 @@
       </ion-button>
     </ion-buttons>
     <ion-buttons slot="secondary">
-        <ion-button>
+
+      <ion-button>
         <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title *ngIf="data" class="ion-text-center text_upper font">Add SubInitiative</ion-title>
-    <ion-title *ngIf="data1" class="ion-text-center text_upper font">Edit SubInitiative</ion-title>
+    <ion-title *ngIf="milestonedata" class="ion-text-center text_upper font">Add Milestone</ion-title>
   </ion-toolbar>
   <ion-row class="header-bottom">
     <img src="../../assets/profile.svg">
@@ -21,19 +21,26 @@
 
 
 <ion-content class="ion-padding">
-    <ion-item lines="none" class="font">
+
+  <ion-item lines="none" class="font">
     <ion-label position="stacked">Description</ion-label>
     <ion-textarea></ion-textarea>
   </ion-item>
-    <ion-item class="bg_input marg_bot_10 font" lines="none">
+
+
+  <ion-item class="bg_input marg_bot_10 font" lines="none">
     <ion-label position="stacked">Progerss %</ion-label>
     <ion-input  inputmode="text"></ion-input>
   </ion-item>
-    <ion-item lines="none">
+
+
+  <ion-item lines="none">
     <ion-label position="stacked">Start Date /End Date</ion-label>
     <ion-input type="date"></ion-input>
   </ion-item>
-    <ion-item lines="none" class="font">
+
+
+  <ion-item lines="none" class="font">
     <ion-label  position="stacked">Attachment</ion-label>
     <ion-input>
       <ion-buttons slot="end">
@@ -41,9 +48,15 @@
       </ion-buttons>
 
     </ion-input>
-    </ion-item>
 
-    <ion-row>
+
+
+  </ion-item>
+
+
+
+
+  <ion-row>
     <ion-col class="font">
       <ion-item lines="none" class="ion-text-right">
         <ion-button color="light">cancel</ion-button>

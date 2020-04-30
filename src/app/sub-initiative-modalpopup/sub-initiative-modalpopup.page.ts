@@ -10,9 +10,7 @@ import { ModalController } from '@ionic/angular';
 export class SubInitiativeModalpopupPage implements OnInit {
   @Input() data: string;
   @Input() data1: string;
-  @Input() activityeditdata: string;
-  @Input() milestonedata: string;
-  @Input() activitydata: string;
+
 
   constructor(public modalControler: ModalController) {
   }

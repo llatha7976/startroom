@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import {IntiativeModalpopupPage} from '../intiative-modalpopup/intiative-modalpopup.page';
 import { ModalController } from '@ionic/angular';
 import {SubInitiativeModalpopupPage} from '../sub-initiative-modalpopup/sub-initiative-modalpopup.page';
+import { ActivitiesModalpopupPage} from '../activities-modalpopup/activities-modalpopup.page';
+import {MilestoneModalpopupPage} from '../milestone-modalpopup/milestone-modalpopup.page';
 
 @Component({
   selector: 'app-initiative-detail',
@@ -46,7 +48,7 @@ export class InitiativeDetailPage implements OnInit {
   }
   async activityeditModal(value) {
     const modal = await this.modalControler.create({
-      component: SubInitiativeModalpopupPage,
+      component: ActivitiesModalpopupPage,
       componentProps: {
         activityeditdata: 'edit',
       }
@@ -56,7 +58,7 @@ export class InitiativeDetailPage implements OnInit {
   async milestoneModal(value) {
     // alert('1')
     const modal = await this.modalControler.create({
-      component: SubInitiativeModalpopupPage,
+      component: MilestoneModalpopupPage,
       componentProps: {
         milestonedata: 'plusmiles',
       }
@@ -66,7 +68,7 @@ export class InitiativeDetailPage implements OnInit {
     // alert('2')
 
     const modal = await this.modalControler.create({
-      component: SubInitiativeModalpopupPage,
+      component: ActivitiesModalpopupPage,
       componentProps: {
         activitydata: 'plusactivity',
       }

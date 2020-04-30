@@ -36,6 +36,14 @@ const routes: Routes = [
     path: 'sub-initiative-modalpopup',
     loadChildren: () => import('./sub-initiative-modalpopup/sub-initiative-modalpopup.module').then( m => m.SubInitiativeModalpopupPageModule)
   },
+  {
+    path: 'activities-modalpopup',
+    loadChildren: () => import('./activities-modalpopup/activities-modalpopup.module').then( m => m.ActivitiesModalpopupPageModule)
+  },
+  {
+    path: 'milestone-modalpopup',
+    loadChildren: () => import('./milestone-modalpopup/milestone-modalpopup.module').then( m => m.MilestoneModalpopupPageModule)
+  },
 
 
 ];
