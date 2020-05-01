@@ -18,6 +18,6 @@ import { CalendarModule} from 'ion2-calendar';
     IntiativeModalpopupPageRoutingModule,
     CalendarModule,
   ],
-  declarations: [IntiativeModalpopupPage]
+  declarations: []
 })
 export class IntiativeModalpopupPageModule {}

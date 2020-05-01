@@ -2,17 +2,17 @@ import {Component, Input, OnInit} from '@angular/core';
 import {ModalController} from '@ionic/angular';
 
 @Component({
-  selector: 'app-milestone-modalpopup',
-  templateUrl: './milestone-modalpopup.page.html',
-  styleUrls: ['./milestone-modalpopup.page.scss'],
+  selector: 'app-budet-popup',
+  templateUrl: './budet-popup.page.html',
+  styleUrls: ['./budet-popup.page.scss'],
 })
-export class MilestoneModalpopupPage implements OnInit {
-  @Input() milestonedata: string;
-  @Input() milesdata: string;
-  constructor(public modalControler: ModalController) { }
+export class BudetPopupPage implements OnInit {
+  @Input() budgetdata: string;
+  constructor(private modalControler: ModalController) { }
 
   ngOnInit() {
   }
+
   dismiss() {
     // using the injected ModalController this page
     // can "dismiss" itself and optionally pass back data

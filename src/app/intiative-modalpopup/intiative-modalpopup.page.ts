@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import {Router} from '@angular/router';
-import { CalendarComponentOptions } from 'ion2-calendar'
+import { CalendarComponentOptions } from 'ion2-calendar';
 
 
 @Component({

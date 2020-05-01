@@ -6,6 +6,7 @@ import { ActivitiesModalpopupPage} from '../activities-modalpopup/activities-mod
 import {MilestoneModalpopupPage} from '../milestone-modalpopup/milestone-modalpopup.page';
 import {InitModelpopupPage} from '../init-modelpopup/init-modelpopup.page';
 import {SubinitModalpopupPage} from '../subinit-modalpopup/subinit-modalpopup.page';
+import {BudetPopupPage} from '../budet-popup/budet-popup.page';
 
 
 @Component({
@@ -84,6 +85,26 @@ export class InitiativeDetailPage implements OnInit {
       component: InitModelpopupPage,
       componentProps: {
         iniativedata: 'editinit',
+      }
+    });
+    return await modal.present();
+  } async mileseditModal(value) {
+    // alert('2')
+
+    const modal = await this.modalControler.create({
+      component: InitModelpopupPage,
+      componentProps: {
+        milesdata: 'edit',
+      }
+    });
+    return await modal.present();
+  }async editBudget(value) {
+    // alert('2')
+
+    const modal = await this.modalControler.create({
+      component: BudetPopupPage,
+      componentProps: {
+        budgetdata: 'editbudget',
       }
     });
     return await modal.present();

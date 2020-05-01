@@ -11,6 +11,7 @@ import {ActivitiesModalpopupPage} from '../activities-modalpopup/activities-moda
 import {MilestoneModalpopupPage} from '../milestone-modalpopup/milestone-modalpopup.page';
 import { InitModelpopupPage} from '../init-modelpopup/init-modelpopup.page';
 import { SubinitModalpopupPage} from '../subinit-modalpopup/subinit-modalpopup.page';
+import {BudetPopupPage} from '../budet-popup/budet-popup.page';
 
 
 @NgModule({
@@ -21,8 +22,8 @@ import { SubinitModalpopupPage} from '../subinit-modalpopup/subinit-modalpopup.p
     InitiativeDetailPageRoutingModule,
 
   ],
-  declarations: [InitiativeDetailPage, SubinitModalpopupPage, ActivitiesModalpopupPage, MilestoneModalpopupPage, InitModelpopupPage],
-  entryComponents: [ SubinitModalpopupPage, ActivitiesModalpopupPage, MilestoneModalpopupPage, InitModelpopupPage ]
+  declarations: [InitiativeDetailPage, SubinitModalpopupPage, ActivitiesModalpopupPage, MilestoneModalpopupPage, InitModelpopupPage ,BudetPopupPage],
+  entryComponents: [ SubinitModalpopupPage, ActivitiesModalpopupPage, MilestoneModalpopupPage, InitModelpopupPage, BudetPopupPage ]
 
 })
 export class InitiativeDetailPageModule {}

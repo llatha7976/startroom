@@ -1,18 +1,13 @@
-<!--<ion-header>-->
-  <!--<ion-toolbar class="bg_theme initiative">-->
-    <!--<ion-title>Initiative Description</ion-title>-->
-      <!--<ion-buttons slot="end">-->
-          <!--<ion-icon name="close-outline" (click)="dismiss()"></ion-icon>-->
-      <!--</ion-buttons>-->
-  <!--</ion-toolbar>-->
-<!--</ion-header>-->
 <ion-header class="ion-no-border font">
     <ion-toolbar class="heading_top">
-        <ion-buttons slot="start" (click)="dismiss('dismissed')">
-            <ion-button>
-                <ion-icon name="chevron-back-outline" size="md" ></ion-icon>
-            </ion-button>
-        </ion-buttons>
+
+
+            <ion-buttons slot="start">
+                <ion-button (click)="dismiss('dismissed')">
+                    <ion-icon name="chevron-back-outline" size="md" ></ion-icon>
+                </ion-button>
+            </ion-buttons>
+
         <ion-buttons slot="secondary">
 
             <ion-button (click)="goLogin()">
@@ -37,7 +32,9 @@
       </ion-item>
         <ion-item class="bg_input marg_bot_10 font" lines="none">
           <ion-label position="stacked">Name</ion-label>
-          <ion-input  inputmode="text" class="text_Name"></ion-input>
+            <ion-textarea></ion-textarea>
+
+            <!--<ion-input  inputmode="text" class="text_Name"></ion-input>-->
         </ion-item>
       <ion-item lines="none" class="font">
         <ion-label position="stacked">Description</ion-label>

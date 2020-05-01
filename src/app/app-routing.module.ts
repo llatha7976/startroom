@@ -52,6 +52,10 @@ const routes: Routes = [
     path: 'subinit-modalpopup',
     loadChildren: () => import('./subinit-modalpopup/subinit-modalpopup.module').then( m => m.SubinitModalpopupPageModule)
   },
+  {
+    path: 'budet-popup',
+    loadChildren: () => import('./budet-popup/budet-popup.module').then( m => m.BudetPopupPageModule)
+  },
 
 ];
 

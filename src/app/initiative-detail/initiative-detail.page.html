@@ -1,7 +1,7 @@
 <ion-header class="ion-no-border font">
   <ion-toolbar class="heading_top">
     <ion-buttons slot="start" (click)="goLogin()">
-        <ion-icon class="back-outline" name="chevron-back-outline" defaultHref="login"></ion-icon>
+        <ion-icon class="back-outline" name="chevron-back-outline" ></ion-icon>
       <!--<ion-back-button defaultHref="login"></ion-back-button>-->
     </ion-buttons>
 
@@ -17,6 +17,9 @@
       </ion-button>
       <ion-button *ngIf="selectTabs == 'budget1'" (click)="initiativemodal('editinit')">
         <ion-icon src="../../assets/icon/Edit.svg" color="light" size="small" (click)="editModal('edit')"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="selectTabs == 'budget'"  (click)="editBudget('editbudget')">
+        <ion-icon src="../../assets/icon/Edit.svg" color="light" size="small"></ion-icon>
       </ion-button>
      
       <ion-button (click)="goLogin()">
@@ -753,7 +756,7 @@
                 <p class="marg_0 font">Lorem, ipsum dolor sit amet,Lorem, ipsum dolorLorem, ipsum dolor sit amet,Lorem, ipsum dolor</p>
             </ion-col>
           <ion-col size="2">
-            <ion-icon class="edit" src="../../assets/icon/Edit.svg" size="small" (click)="activityeditModal('edit')"></ion-icon>
+            <ion-icon class="edit" src="../../assets/icon/Edit.svg" size="small" (click)="mileseditModal('edit')"></ion-icon>
             <ion-icon class="edit" src="../../assets/icon/Delete.svg" color="dark"  size="small"></ion-icon>
           </ion-col>
           <ion-col size="6">
@@ -795,7 +798,7 @@
           <p class="marg_0 font">Lorem, ipsum dolor sit amet,Lorem, ipsum dolorLorem, ipsum dolor sit amet,Lorem, ipsum dolor</p>
         </ion-col>
         <ion-col size="2">
-          <ion-icon class="edit" src="../../assets/icon/Edit.svg" size="small" (click)="activityeditModal('edit')"></ion-icon>
+          <ion-icon class="edit" src="../../assets/icon/Edit.svg" size="small" (click)="mileseditModal('edit')"></ion-icon>
           <ion-icon class="edit" src="../../assets/icon/Delete.svg" color="dark"  size="small"></ion-icon>
         </ion-col>
         <ion-col size="6">
@@ -826,7 +829,7 @@
           <p class="marg_0 font">Lorem, ipsum dolor sit amet,Lorem, ipsum dolorLorem, ipsum dolor sit amet,Lorem, ipsum dolor</p>
         </ion-col>
         <ion-col size="2">
-          <ion-icon class="edit" src="../../assets/icon/Edit.svg" size="small" (click)="activityeditModal('edit')"></ion-icon>
+          <ion-icon class="edit" src="../../assets/icon/Edit.svg" size="small" (click)="mileseditModal('edit')"></ion-icon>
           <ion-icon class="edit" src="../../assets/icon/Delete.svg" color="dark"  size="small"></ion-icon>
         </ion-col>
         <ion-col size="6">
