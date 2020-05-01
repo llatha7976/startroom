@@ -6,7 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { ActivitiesModalpopupPageRoutingModule } from './activities-modalpopup-routing.module';
 
-import { ActivitiesModalpopupPage } from './activities-modalpopup.page';
+// import { ActivitiesModalpopupPage } from './activities-modalpopup.page';
 
 @NgModule({
   imports: [
@@ -15,6 +15,6 @@ import { ActivitiesModalpopupPage } from './activities-modalpopup.page';
     IonicModule,
     ActivitiesModalpopupPageRoutingModule
   ],
-  declarations: [ActivitiesModalpopupPage]
+  declarations: []
 })
 export class ActivitiesModalpopupPageModule {}

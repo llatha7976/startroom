@@ -1,5 +1,5 @@
 <ion-header class="ion-no-border font">
-  <ion-toolbar>
+  <ion-toolbar class="heading_top">
     <ion-buttons slot="start" (click)="dismiss('dismissed')">
       <ion-button>
         <ion-icon name="chevron-back-outline" size="md" (click)="goBack()"></ion-icon>
@@ -11,10 +11,10 @@
         <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title *ngIf="milestonedata" class="ion-text-center text_upper font">Add Milestone</ion-title>
+    <ion-title *ngIf="milestonedata" class="ion-text-center text_upper font font-weight">Add Milestone</ion-title>
   </ion-toolbar>
   <ion-row class="header-bottom">
-    <img src="../../assets/profile.svg">
+    <img src="../../assets/profile.svg" class="img_top">
     <h6 class="text_upper font">Human Resource</h6>
   </ion-row>
 </ion-header>

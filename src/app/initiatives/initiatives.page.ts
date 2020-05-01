@@ -20,12 +20,12 @@ export class InitiativesPage implements OnInit {
 
   }
 
-  goLogin(){
+  goLogin() {
     this.route.navigate(['dashboard']);
   }
-  goDetail(){
+  goDetail() {
     // alert('1')
-    this.route.navigate(['initiative-detail']);
+    this.route.navigate(['/initiative-detail']);
   }
 
 

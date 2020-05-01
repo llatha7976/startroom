@@ -40,10 +40,15 @@ ion-header{
     margin-left: 45px;
 
 }
+ion-header{
+    .heading_top {
+        padding-top: 15px !important;
+    }
+}
 
 // header bottom
 .header-bottom{
-    height: 38px;
+    height: 70px;
     img{
         border-radius: 100px;
         border: 2px solid #fff;
@@ -107,14 +112,16 @@ ion-content{
     .progress_bar{
         display: flex;
         align-items: center;
-        margin-top: 10px;
+        //margin-top: -14px;
+
+
+        //margin-top: 10px;
         ion-progress-bar{
             margin-right: 10px;
             height: 10px;
             border-radius: 12px;
             --buffer-background	: #ccc;
-            --progress-background: rgb(32, 207, 125);
-        }
+              --progress-background: #0b9e30;        }
     }
 
     .impact_txt{
@@ -177,13 +184,15 @@ ion-content{
         ion-img{
             border-radius: 100%;
             overflow: hidden;
-            width: 34px;
-            height: 34px;
+            //width: 34px;
+            //height: 34px;
+          width: 29px;
+            height: 29px;
             object-fit: cover;
         }
         span.more{
-            width: 34px;
-            height: 34px;
+            width: 29px;
+            height: 29px;
             border-radius: 100%;
             border: 1px solid;
             display: flex;
@@ -230,6 +239,9 @@ ion-footer{
     /* margin-top: 11px; */
     //float: right;
     font-size: 12px;
+    margin-top: -12px;
+    font-weight: bold;
+
 
 }
 .margin_top  {margin-top: -13px;}
@@ -264,5 +276,28 @@ ion-content{
     margin-top: -17px;
 
 }
+.img_top{
+    margin-top: 23px !important;
+
+}
+
+ion-content{
+  ion-badge{
+  //margin: 5px -13px 0px;
+
+    font-size: 13px;
+    --ion-color-base: #0b9e30 !important;
+  }
+}
+.completed{
+    margin-right: -44px;
+    padding: 0;
+    margin-top: -13px;
+    //justify-items: right;
+    text-align: right;
+    .items_badge{
+        display: inline-block;
 
 
+    }
+}

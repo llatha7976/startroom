@@ -15,6 +15,6 @@ import { InitModelpopupPage } from './init-modelpopup.page';
     IonicModule,
     InitModelpopupPageRoutingModule
   ],
-  declarations: [InitModelpopupPage]
+  declarations: []
 })
 export class InitModelpopupPageModule {}

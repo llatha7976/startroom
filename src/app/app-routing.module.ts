@@ -33,14 +33,6 @@ const routes: Routes = [
     loadChildren: () => import('./intiative-modalpopup/intiative-modalpopup.module').then( m => m.IntiativeModalpopupPageModule)
   },
   {
-    path: 'meeting',
-    loadChildren: () => import('./meeting/meeting.module').then( m => m.MeetingPageModule)
-  },
-  {
-    path: 'sub-initiative-modalpopup',
-    loadChildren: () => import('./sub-initiative-modalpopup/sub-initiative-modalpopup.module').then( m => m.SubInitiativeModalpopupPageModule)
-  },
-  {
     path: 'activities-modalpopup',
     loadChildren: () => import('./activities-modalpopup/activities-modalpopup.module').then( m => m.ActivitiesModalpopupPageModule)
   },
@@ -52,7 +44,14 @@ const routes: Routes = [
     path: 'init-modelpopup',
     loadChildren: () => import('./init-modelpopup/init-modelpopup.module').then( m => m.InitModelpopupPageModule)
   },
-
+  {
+    path: 'meeting',
+    loadChildren: () => import('./meeting/meeting.module').then( m => m.MeetingPageModule)
+  },
+  {
+    path: 'subinit-modalpopup',
+    loadChildren: () => import('./subinit-modalpopup/subinit-modalpopup.module').then( m => m.SubinitModalpopupPageModule)
+  },
 
 ];
 

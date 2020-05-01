@@ -7,23 +7,22 @@ import { IonicModule } from '@ionic/angular';
 import { InitiativeDetailPageRoutingModule } from './initiative-detail-routing.module';
 
 import { InitiativeDetailPage } from './initiative-detail.page';
-// import {IntiativeModalpopupPage} from '../intiative-modalpopup/intiative-modalpopup.page';
-import {SubInitiativeModalpopupPage} from '../sub-initiative-modalpopup/sub-initiative-modalpopup.page';
 import {ActivitiesModalpopupPage} from '../activities-modalpopup/activities-modalpopup.page';
 import {MilestoneModalpopupPage} from '../milestone-modalpopup/milestone-modalpopup.page';
-import{ InitModelpopupPage} from '../init-modelpopup/init-modelpopup.page';
+import { InitModelpopupPage} from '../init-modelpopup/init-modelpopup.page';
+import { SubinitModalpopupPage} from '../subinit-modalpopup/subinit-modalpopup.page';
 
-// import {IntiativeModalpopupPage} from '../intiative-modalpopup/intiative-modalpopup.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InitiativeDetailPageRoutingModule
+    InitiativeDetailPageRoutingModule,
+
   ],
-  declarations: [InitiativeDetailPage, SubInitiativeModalpopupPage, ActivitiesModalpopupPage, MilestoneModalpopupPage,InitModelpopupPage],
-  entryComponents: [ SubInitiativeModalpopupPage, ActivitiesModalpopupPage, MilestoneModalpopupPage,InitModelpopupPage ]
+  declarations: [InitiativeDetailPage, SubinitModalpopupPage, ActivitiesModalpopupPage, MilestoneModalpopupPage, InitModelpopupPage],
+  entryComponents: [ SubinitModalpopupPage, ActivitiesModalpopupPage, MilestoneModalpopupPage, InitModelpopupPage ]
 
 })
 export class InitiativeDetailPageModule {}

@@ -7,7 +7,7 @@ import { IntiativeModalpopupPage } from './intiative-modalpopup.page';
 
 
 import { IntiativeModalpopupPageRoutingModule } from './intiative-modalpopup-routing.module';
-
+import { CalendarModule} from 'ion2-calendar';
 
 
 @NgModule({
@@ -15,7 +15,8 @@ import { IntiativeModalpopupPageRoutingModule } from './intiative-modalpopup-rou
     CommonModule,
     FormsModule,
     IonicModule,
-    IntiativeModalpopupPageRoutingModule
+    IntiativeModalpopupPageRoutingModule,
+    CalendarModule,
   ],
   declarations: [IntiativeModalpopupPage]
 })

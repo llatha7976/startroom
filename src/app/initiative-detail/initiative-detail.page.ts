@@ -2,11 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {IntiativeModalpopupPage} from '../intiative-modalpopup/intiative-modalpopup.page';
 import { ModalController } from '@ionic/angular';
-import {SubInitiativeModalpopupPage} from '../sub-initiative-modalpopup/sub-initiative-modalpopup.page';
 import { ActivitiesModalpopupPage} from '../activities-modalpopup/activities-modalpopup.page';
 import {MilestoneModalpopupPage} from '../milestone-modalpopup/milestone-modalpopup.page';
 import {InitModelpopupPage} from '../init-modelpopup/init-modelpopup.page';
-import { NgModule } from '@angular/core';
+import {SubinitModalpopupPage} from '../subinit-modalpopup/subinit-modalpopup.page';
 
 
 @Component({
@@ -33,7 +32,7 @@ export class InitiativeDetailPage implements OnInit {
     // alert('3')
 
     const modal = await this.modalControler.create({
-      component: SubInitiativeModalpopupPage,
+      component: SubinitModalpopupPage,
       componentProps: {
         data: 'plus',
       }
@@ -42,7 +41,7 @@ export class InitiativeDetailPage implements OnInit {
   }
   async editModal(value) {
     const modal = await this.modalControler.create({
-      component: SubInitiativeModalpopupPage,
+      component: SubinitModalpopupPage,
       componentProps: {
         data1: 'edit',
       }

@@ -10,12 +10,13 @@ import { InitiativesPage } from './initiatives.page';
 import { IntiativeModalpopupPage } from '../intiative-modalpopup/intiative-modalpopup.page';
 
 
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InitiativesPageRoutingModule
+    InitiativesPageRoutingModule,
   ],
   declarations: [InitiativesPage, IntiativeModalpopupPage],
   entryComponents: [ IntiativeModalpopupPage ]
