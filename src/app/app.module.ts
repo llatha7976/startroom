@@ -8,7 +8,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { CalendarModule } from 'ion2-calendar';
+// import { CalendarModule } from 'ion2-calendar';
+// import { Ionic4DatepickerModule } from '@logisticinfotech/ionic4-datepicker';
+
 
 
 
@@ -18,7 +20,9 @@ import { CalendarModule } from 'ion2-calendar';
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule, CalendarModule
+    AppRoutingModule,
+    // CalendarModule,
+    // Ionic4DatepickerModule
   ],
   providers: [
     StatusBar,

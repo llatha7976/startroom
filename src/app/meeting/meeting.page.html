@@ -1,201 +1,235 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar class="heading_top">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="login"></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="secondary">
       <ion-button>
-<!--        (click)="presentModal()"-->
         <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
       </ion-button>
       <ion-button (click)="goLogin()">
         <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title class="ion-text-center text_upper">Meetings</ion-title>
+    <ion-title class="ion-text-center text_upper font font-weight">Meetings</ion-title>
   </ion-toolbar>
   <ion-row class="header-bottom">
-    <img src="../../assets/profile.svg">
-    <h6 class="text_upper">Human Resource</h6>
+    <img src="../../assets/profile.svg" class="img_top">
+    <h6 class="text_upper font">Human Resource</h6>
   </ion-row>
 </ion-header>
 
 <ion-content>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-item lines="none" class="ion-no-padding">
-        <p>SALES MEETING</p>
-        <ion-icon slot="end" src="../../assets/icon/Edit.svg" color="dark"></ion-icon>
-        <ion-icon slot="end" ion-text-right  src="../../assets/icon/Delete.svg" color="dark"></ion-icon>
-      </ion-item>
-    </ion-card-header>
-    <ion-card-content class="ion-no-padding">
-      <ion-row style="padding: 0px !important;">
-        <ion-col size="4">
-          <ion-item lines="none" class="ion-no-padding">
-          <ion-img style="width: 20px;" src="../../assets/icon/calender.png"></ion-img>
-          <ion-text style="float: left">Mar 13</ion-text>
-          </ion-item>
+  <ion-card class="ion-no-padding">
+    <ion-card-header class="ion-no-padding">
+      <ion-row>
+        <ion-col size="10" >
+       <ion-text class="font-weight font sales ion-align-items-center" (click)="goDeatils()">Increase the influence of customer's views</ion-text>
         </ion-col>
+      <ion-col size="2">
+      <ion-icon class="edit ion-text-right" src="../../assets/icon/Edit.svg" color="dark" ></ion-icon>
+      <ion-icon  class="edit ion-text-right" src="../../assets/icon/Delete.svg" color="dark" ></ion-icon>
+    </ion-col>
+      </ion-row>
+    </ion-card-header>
+    <ion-card-content class="margin_bottom">
+      <ion-grid>
+      <ion-row class="ion-no-padding ion-align-items-center">
         <ion-col size="4">
-          <ion-item lines="none" class="ion-no-padding">
-          <ion-img style="width: 30px" src="../../assets/icon/clock.png"></ion-img>
+          <ion-img src="../../assets/icon/calender.png"></ion-img>
+          <ion-text class="font">Mar 13</ion-text>
+        </ion-col>
+        <ion-col size="6">
+          <ion-img  src="../../assets/icon/clock.png"></ion-img>
           <ion-text>3.00PM - 4.00PM</ion-text>
-          </ion-item>
+
         </ion-col>
-        <ion-col size="4">
-          <ion-text>Ongoing</ion-text>
-        </ion-col>
-        <ion-col size="12">
-          <ion-item lines="none" class="ion-no-padding">
-          <ion-img style="width: 20px" src="../../assets/icon/location.png"></ion-img>
-          <ion-text>Location: Meeting Hall 1454</ion-text>
-          </ion-item>
-        </ion-col>
-        <ion-col size="6">
-          <ion-label>Initiated By</ion-label>
-          <div class="profile_img_act">
-            <ion-img src="../../assets/profile.jpg"></ion-img>
-          </div>
-        </ion-col>
-        <ion-col size="6">
-          <ion-label>Attendees</ion-label>
-          <div class="profile_img_act">
-            <ion-img src="../../assets/profile.jpg"></ion-img>
-            <ion-img src="../../assets/profile.jpg"></ion-img>
-            <span class="more">+3</span>
-          </div>
-        </ion-col>
-<!--        <ion-col size="8">-->
-<!--          <ion-label>Department 1</ion-label>-->
-<!--          <div class="progress_bar">-->
-<!--            <ion-progress-bar value="0.5"></ion-progress-bar>80%-->
-<!--          </div>-->
-<!--        </ion-col>-->
-<!--        <ion-col class="due_date"  size="4">-->
-<!--          <ion-label>Due Date</ion-label>-->
-<!--          <ion-text>Oct 11,2020</ion-text>-->
-<!--        </ion-col>-->
+
       </ion-row>
+      </ion-grid>
+      <ion-grid>
+        <ion-row class=" ion-no-padding ion-align-items-center location">
+          <ion-col size="9">
+            <ion-img src="../../assets/icon/location.png"></ion-img>
+            <ion-text class="font">Location: Meeting Hall 1454</ion-text>
+          </ion-col>
+          <ion-col size="2">
+            <ion-text class="font">Ongoing</ion-text>
+
+          </ion-col>
+          <ion-col size="1">
+            <div class="rounded"></div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+<ion-row class=" ion-no-padding ion-align-items-center location">
+    <ion-col size="6">
+      <ion-label class="font">Initiated By</ion-label>
+      <div class="profile_img_act">
+        <ion-img src="../../assets/profile.jpg"></ion-img>
+        <ion-text>You</ion-text>
+      </div>
+    </ion-col>
+    <ion-col size="6">
+      <ion-label class="font">Attendees</ion-label>
+      <div class="profile_img_act">
+        <ion-img src="../../assets/profile.jpg"></ion-img>
+        <ion-img src="../../assets/profile.jpg"></ion-img>
+        <ion-img src="../../assets/profile.jpg"></ion-img>
+        <span class="more">+3</span>
+      </div>
+    </ion-col>
+  </ion-row>
+
+
     </ion-card-content>
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-item lines="none" class="ion-no-padding">
-        <p>TECHNICAL TEAM MEETING</p>
-        <ion-icon slot="end" src="../../assets/icon/Edit.svg" color="dark"></ion-icon>
-        <ion-icon slot="end" src="../../assets/icon/Delete.svg" color="dark"></ion-icon>
-      </ion-item>
+  <ion-card class="ion-no-padding">
+    <ion-card-header class="ion-no-padding">
+      <ion-row>
+        <ion-col size="10">
+          <ion-text class="font-weight font sales ion-align-items-center">Increase the influence of customer's views</ion-text>
+        </ion-col>
+        <ion-col size="2">
+          <ion-icon class="edit ion-text-right" src="../../assets/icon/Edit.svg" color="dark" ></ion-icon>
+          <ion-icon  class="edit ion-text-right" src="../../assets/icon/Delete.svg" color="dark" ></ion-icon>
+        </ion-col>
+      </ion-row>
     </ion-card-header>
-    <ion-card-content class="ion-no-padding">
-      <ion-row style="padding: 0px !important;">
-        <ion-col size="4">
-          <ion-item lines="none" class="ion-no-padding">
-            <ion-img style="width: 20px;" src="../../assets/icon/calender.png"></ion-img>
-            <ion-text style="float: left">Mar 13</ion-text>
-          </ion-item>
-        </ion-col>
-        <ion-col size="4">
-          <ion-item lines="none" class="ion-no-padding">
-            <ion-img style="width: 30px" src="../../assets/icon/clock.png"></ion-img>
+    <ion-card-content class="margin_bottom">
+      <ion-grid>
+        <ion-row class="ion-no-padding ion-align-items-center">
+          <ion-col size="4">
+            <ion-img src="../../assets/icon/calender.png"></ion-img>
+            <ion-text class="font">Mar 13</ion-text>
+          </ion-col>
+          <ion-col size="6">
+            <ion-img  src="../../assets/icon/clock.png"></ion-img>
             <ion-text>3.00PM - 4.00PM</ion-text>
-          </ion-item>
-        </ion-col>
-        <ion-col size="4">
-          <ion-text>Ongoing</ion-text>
-        </ion-col>
-        <ion-col size="12">
-          <ion-item lines="none" class="ion-no-padding">
-            <ion-img style="width: 20px" src="../../assets/icon/location.png"></ion-img>
-            <ion-text>Location: Meeting Hall 1454</ion-text>
-          </ion-item>
-        </ion-col>
+
+          </ion-col>
+          <!--<ion-col size="2">-->
+            <!--<ion-text class="font">Pending</ion-text>-->
+
+          <!--</ion-col>-->
+          <!--<ion-col size="1">-->
+            <!--<div class="yellow_rounded"></div>-->
+          <!--</ion-col>-->
+        </ion-row>
+      </ion-grid>
+      <ion-grid>
+        <ion-row class=" ion-no-padding ion-align-items-center location">
+          <ion-col size="9">
+            <ion-img src="../../assets/icon/location.png"></ion-img>
+            <ion-text class="font">Location: Meeting Hall 1454</ion-text>
+          </ion-col>
+          <ion-col size="2">
+            <ion-text class="font">Pending</ion-text>
+
+          </ion-col>
+          <ion-col size="1">
+            <div class="yellow_rounded"></div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-row class=" ion-no-padding ion-align-items-center location">
         <ion-col size="6">
-          <ion-label>Initiated By</ion-label>
+          <ion-label class="font">Initiated By</ion-label>
           <div class="profile_img_act">
             <ion-img src="../../assets/profile.jpg"></ion-img>
+            <ion-text class="font">Amanda wallace</ion-text>
           </div>
         </ion-col>
-        <ion-col size="6">
-          <ion-label>Attendees</ion-label>
+        <ion-col size="4">
+          <ion-label class="font">Attendees</ion-label>
           <div class="profile_img_act">
+            <ion-img src="../../assets/profile.jpg"></ion-img>
             <ion-img src="../../assets/profile.jpg"></ion-img>
             <ion-img src="../../assets/profile.jpg"></ion-img>
             <span class="more">+3</span>
           </div>
         </ion-col>
-        <!--        <ion-col size="8">-->
-        <!--          <ion-label>Department 1</ion-label>-->
-        <!--          <div class="progress_bar">-->
-        <!--            <ion-progress-bar value="0.5"></ion-progress-bar>80%-->
-        <!--          </div>-->
-        <!--        </ion-col>-->
-        <!--        <ion-col class="due_date"  size="4">-->
-        <!--          <ion-label>Due Date</ion-label>-->
-        <!--          <ion-text>Oct 11,2020</ion-text>-->
-        <!--        </ion-col>-->
+        <ion-col size="2">
+          <ion-badge class="badge font text_upper">save</ion-badge>
+        </ion-col>
+
       </ion-row>
+
+
     </ion-card-content>
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-item lines="none" class="ion-no-padding">
-        <p>HR'S MEETING</p>
-        <ion-icon slot="end" src="../../assets/icon/Edit.svg" color="dark"></ion-icon>
-        <ion-icon slot="end" src="../../assets/icon/Delete.svg" color="dark"></ion-icon>
-      </ion-item>
+  <ion-card class="ion-no-padding">
+    <ion-card-header class="ion-no-padding">
+      <ion-row>
+        <ion-col size="10">
+          <ion-text class="font-weight font sales ion-align-items-center">Increase the influence of customer's views</ion-text>
+        </ion-col>
+        <ion-col size="2">
+          <ion-icon class="edit ion-text-right" src="../../assets/icon/Edit.svg" color="dark" ></ion-icon>
+          <ion-icon  class="edit ion-text-right" src="../../assets/icon/Delete.svg" color="dark" ></ion-icon>
+        </ion-col>
+      </ion-row>
     </ion-card-header>
-    <ion-card-content class="ion-no-padding">
-      <ion-row style="padding: 0px !important;">
-        <ion-col size="4">
-          <ion-item lines="none" class="ion-no-padding">
-            <ion-img style="width: 20px;" src="../../assets/icon/calender.png"></ion-img>
-            <ion-text style="float: left">Mar 13</ion-text>
-          </ion-item>
-        </ion-col>
-        <ion-col size="4">
-          <ion-item lines="none" class="ion-no-padding">
-            <ion-img style="width: 30px" src="../../assets/icon/clock.png"></ion-img>
+    <ion-card-content class="margin_bottom">
+      <ion-grid>
+        <ion-row class="ion-no-padding ion-align-items-center">
+          <ion-col size="3">
+            <ion-img src="../../assets/icon/calender.png"></ion-img>
+            <ion-text class="font">Mar 13</ion-text>
+          </ion-col>
+          <ion-col size="6">
+            <ion-img  src="../../assets/icon/clock.png"></ion-img>
             <ion-text>3.00PM - 4.00PM</ion-text>
-          </ion-item>
-        </ion-col>
-        <ion-col size="4">
-          <ion-text>Ongoing</ion-text>
-        </ion-col>
-        <ion-col size="12">
-          <ion-item lines="none" class="ion-no-padding">
-            <ion-img style="width: 20px" src="../../assets/icon/location.png"></ion-img>
-            <ion-text>Location: Meeting Hall 1454</ion-text>
-          </ion-item>
-        </ion-col>
+
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+      <ion-grid>
+        <ion-row class=" ion-no-padding ion-align-items-center location">
+          <ion-col size="9">
+            <ion-img src="../../assets/icon/location.png"></ion-img>
+            <ion-text class="font">Location: Meeting Hall 1454</ion-text>
+          </ion-col>
+          <ion-col size="2">
+            <ion-text class="font">cancelled</ion-text>
+
+          </ion-col>
+          <ion-col size="1">
+            <div class="red-rounded"></div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-row class=" ion-no-padding ion-align-items-center location">
         <ion-col size="6">
-          <ion-label>Initiated By</ion-label>
+          <ion-label class="font">Initiated By</ion-label>
           <div class="profile_img_act">
             <ion-img src="../../assets/profile.jpg"></ion-img>
+            <ion-text class="font">Flonna Diaz</ion-text>
           </div>
         </ion-col>
-        <ion-col size="6">
-          <ion-label>Attendees</ion-label>
+        <ion-col size="4">
+          <ion-label class="font">Attendees</ion-label>
           <div class="profile_img_act">
+            <ion-img src="../../assets/profile.jpg"></ion-img>
             <ion-img src="../../assets/profile.jpg"></ion-img>
             <ion-img src="../../assets/profile.jpg"></ion-img>
             <span class="more">+3</span>
           </div>
         </ion-col>
-        <!--        <ion-col size="8">-->
-        <!--          <ion-label>Department 1</ion-label>-->
-        <!--          <div class="progress_bar">-->
-        <!--            <ion-progress-bar value="0.5"></ion-progress-bar>80%-->
-        <!--          </div>-->
-        <!--        </ion-col>-->
-        <!--        <ion-col class="due_date"  size="4">-->
-        <!--          <ion-label>Due Date</ion-label>-->
-        <!--          <ion-text>Oct 11,2020</ion-text>-->
-        <!--        </ion-col>-->
+        <ion-col size="2">
+          <ion-badge class="badge_cancel font text_upper">saved</ion-badge>
+        </ion-col>
+
       </ion-row>
+
+
     </ion-card-content>
   </ion-card>
 

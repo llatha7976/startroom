@@ -267,7 +267,9 @@ ion-content{
     ion-grid {
         ion-card {
             .edit {
-                margin-top: -37px;
+                margin-top: -3px;
+                margin-left: 5px;
+                font-size: 18px;
             }
         }
     }
@@ -300,4 +302,16 @@ ion-content{
 
 
     }
+}
+.align{
+    margin-left: 51px;
+
+}
+.margin_left{
+margin-left: 50px !important;}
+.margin_init{
+margin-left: 39px !important;}
+.attach{
+    width: 19px;
+
 }

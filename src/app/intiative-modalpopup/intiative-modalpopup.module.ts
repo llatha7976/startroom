@@ -5,10 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { IntiativeModalpopupPage } from './intiative-modalpopup.page';
 
-
 import { IntiativeModalpopupPageRoutingModule } from './intiative-modalpopup-routing.module';
-import { CalendarModule} from 'ion2-calendar';
-
+// import { CalendarModule} from 'ion2-calendar';
+// import {NgCalendarModule} from 'ionic2-calendar'
 
 @NgModule({
   imports: [
@@ -16,7 +15,8 @@ import { CalendarModule} from 'ion2-calendar';
     FormsModule,
     IonicModule,
     IntiativeModalpopupPageRoutingModule,
-    CalendarModule,
+    // CalendarModule,
+    // NgCalendarModule
   ],
   declarations: []
 })

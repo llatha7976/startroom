@@ -1,0 +1,114 @@
+<ion-header class="ion-no-border font">
+  <ion-toolbar class="heading_top">
+    <ion-buttons slot="start" (click)="goLogin()">
+      <ion-icon class="back-outline" name="chevron-back-outline" ></ion-icon>
+      <!--<ion-back-button defaultHref="login"></ion-back-button>-->
+    </ion-buttons>
+
+    <ion-buttons slot="secondary"  >
+      <ion-button *ngIf="selectTabs == 'budget1'" (click)="presentModal('plus')">
+        <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
+      </ion-button>
+      <ion-button  *ngIf="selectTabs == 'Notes'" (click)="milestoneModal('plusmiles')">
+        <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="selectTabs == 'Action'"  (click)="activityModal('plusactivity')" >
+        <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
+      </ion-button>
+
+
+      <ion-button (click)="goLogin()">
+        <!--<ion-icon src="../../assets/icon/Edit.svg" color="light" size="small" (click)="editModal('edit')"></ion-icon>-->
+
+        <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title *ngIf="selectTabs == 'budget1'"  class="ion-text-center text_upper ion-align-items-center font-weight margin_left">Meeting Detail</ion-title>
+    <ion-title *ngIf="selectTabs == 'Notes'"  class="ion-text-center text_upper font-weight margin_notes">Notes</ion-title>
+    <ion-title *ngIf="selectTabs == 'Action'"  class="ion-text-center text_upper font-weight margin_notes">Actions</ion-title>
+    <ion-title *ngIf="selectTabs == 'Attachment'"  class="ion-text-center text_upper font-weight">Attachments</ion-title>
+  </ion-toolbar>
+  <ion-row class="header-bottom">
+    <img src="../../assets/profile.svg" class="img_top">
+    <h6 class="text_upper">Human Resource</h6>
+  </ion-row>
+</ion-header>
+
+<ion-content>
+  <ion-segment   [(ngModel)]="selectTabs" class="font">
+    <ion-segment-button value="budget1" >
+      <ion-icon src="../../assets/icon/initiative/eye-outline .svg" size="small"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="Notes" >
+      <ion-img src="../../assets/icon/Notes.png" size="small" class="attach"></ion-img>
+    </ion-segment-button>
+    <ion-segment-button value="Action" >
+      <ion-img src="../../assets/icon/Action.png" size="small" class="attach"></ion-img>
+    </ion-segment-button>
+    <ion-segment-button value="Attachment"  >
+      <ion-img src="../../assets/icon/Attachment.png" size="small" class="attach"></ion-img>
+    </ion-segment-button>
+  </ion-segment>
+
+
+
+  <ion-grid class="top-curve font" *ngIf="selectTabs == 'budget1'">
+    <ion-row class="content-row">
+      <ion-col size="12" >
+        <ion-item class="bg_input marg_bot_10 font" lines="none">
+          <ion-label position="stacked">Title</ion-label>
+          <ion-input  inputmode="text"></ion-input>
+        </ion-item>
+      </ion-col>
+
+    </ion-row>
+    <ion-row class="content-row">
+      <ion-col size="6" >
+        <ion-item class="bg_input marg_bot_10 font" lines="none">
+          <ion-label position="stacked">Date</ion-label>
+          <ion-input  inputmode="text" type="date"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="3" >
+        <ion-item class="bg_input marg_bot_10 font" lines="none">
+          <ion-label position="stacked">start-time</ion-label>
+          <ion-input  inputmode="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="3" >
+        <ion-item class="bg_input marg_bot_10 font" lines="none">
+          <ion-label position="stacked">End-time</ion-label>
+          <ion-input  inputmode="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" >
+        <ion-item class="bg_input marg_bot_10 font" lines="none">
+          <ion-label position="stacked">Location</ion-label>
+          <ion-input  inputmode="text"></ion-input>
+        </ion-item>
+      </ion-col>
+
+
+    </ion-row>
+  </ion-grid>
+  <ion-row class=" ion-no-padding ion-align-items-center location">
+    <ion-col size="12">
+      <ion-label class="font">Initiated By</ion-label>
+      <div class="profile_img_act">
+        <ion-img src="../../assets/profile.jpg"></ion-img>
+        <ion-text>You</ion-text>
+      </div>
+    </ion-col>
+    <ion-col size="12">
+      <ion-label class="font">Attendees</ion-label>
+      <div class="profile_img_act">
+        <ion-img src="../../assets/profile.jpg"></ion-img>
+        <ion-img src="../../assets/profile.jpg"></ion-img>
+        <ion-img src="../../assets/profile.jpg"></ion-img>
+        <span class="more">+3</span>
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>

@@ -56,6 +56,10 @@ const routes: Routes = [
     path: 'budet-popup',
     loadChildren: () => import('./budet-popup/budet-popup.module').then( m => m.BudetPopupPageModule)
   },
+  {
+    path: 'meetings-details',
+    loadChildren: () => import('./meetings-details/meetings-details.module').then( m => m.MeetingsDetailsPageModule)
+  },
 
 ];
 

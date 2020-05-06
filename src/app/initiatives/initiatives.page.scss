@@ -10,7 +10,7 @@ ion-header{
         border-bottom-right-radius: 18px;
         ion-title{
             font-size: 16px;
-            margin-left: 15px;
+            margin-left: 43px;
 
         }
     }
@@ -139,8 +139,10 @@ ion-footer{
 ion-content{
     ion-card{
         .edit{
-            margin-top: -40px;
+            margin-top: -3px;
             margin-left: 5px;
+            font-size: 18px;
+
         }
     }
 }

@@ -92,7 +92,7 @@ export class InitiativeDetailPage implements OnInit {
     // alert('2')
 
     const modal = await this.modalControler.create({
-      component: InitModelpopupPage,
+      component: MilestoneModalpopupPage,
       componentProps: {
         milesdata: 'edit',
       }
@@ -109,5 +109,8 @@ export class InitiativeDetailPage implements OnInit {
     });
     return await modal.present();
   }
+
+  // var myApp = angular.module('myApp', ['gantt']);
+
 }
 

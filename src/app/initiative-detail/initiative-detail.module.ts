@@ -22,7 +22,7 @@ import {BudetPopupPage} from '../budet-popup/budet-popup.page';
     InitiativeDetailPageRoutingModule,
 
   ],
-  declarations: [InitiativeDetailPage, SubinitModalpopupPage, ActivitiesModalpopupPage, MilestoneModalpopupPage, InitModelpopupPage ,BudetPopupPage],
+  declarations: [InitiativeDetailPage, SubinitModalpopupPage, ActivitiesModalpopupPage, MilestoneModalpopupPage, InitModelpopupPage , BudetPopupPage],
   entryComponents: [ SubinitModalpopupPage, ActivitiesModalpopupPage, MilestoneModalpopupPage, InitModelpopupPage, BudetPopupPage ]
 
 })

@@ -28,13 +28,14 @@
         <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>        
       </ion-button>
     </ion-buttons>
-    <ion-title *ngIf="selectTabs == 'budget1'"  class="ion-text-center text_upper ion-align-items-center font-weight">Initiatives Detail</ion-title>
-    <ion-title *ngIf="selectTabs == 'budget'"  class="ion-text-center text_upper font-weight">INITIATIVES BUDGET</ion-title>
-    <ion-title *ngIf="selectTabs == 'sub_initiative'"  class="ion-text-center text_upper font-weight">Sub Initiatives</ion-title>
-    <ion-title *ngIf="selectTabs == 'milestone'"  class="ion-text-center text_upper font-weight">Milestones</ion-title>
+    <ion-title *ngIf="selectTabs == 'budget1'"  class="ion-text-center text_upper ion-align-items-center font-weight margin_left">Initiatives Detail</ion-title>
+    <ion-title *ngIf="selectTabs == 'budget'"  class="ion-text-center text_upper font-weight margin_init">INITIATIVES BUDGET</ion-title>
+    <ion-title *ngIf="selectTabs == 'sub_initiative'"  class="ion-text-center text_upper font-weight margin_left">Sub Initiatives</ion-title>
+    <ion-title *ngIf="selectTabs == 'milestone'"  class="ion-text-center text_upper font-weight align">Milestones</ion-title>
     <ion-title *ngIf="selectTabs == 'activity'"  class="ion-text-center text_upper activities font-weight">Activities</ion-title>
     <ion-title *ngIf="selectTabs == 'chart'"  class="ion-text-center text_upper font-weight">GANTT CHART</ion-title>
     <ion-title *ngIf="selectTabs == 'comments'"  class="ion-text-center text_upper font-weight">Comments</ion-title>
+    <ion-title *ngIf="selectTabs == 'budget2'"  class="ion-text-center text_upper font-weight margin_left">Initiative Details</ion-title>
   </ion-toolbar>
   <ion-row class="header-bottom">
     <img src="../../assets/profile.svg" class="img_top">
@@ -43,92 +44,40 @@
 </ion-header>
 
 <ion-content>
-  <!-- <ion-tabs>
-    <ion-tab-bar slot="top">
-      <ion-tab-button tab="budget">
-        <ion-icon src="../../assets/icon/initiative/budget.svg" siz="small"></ion-icon>
-      </ion-tab-button>
-  
-      <ion-tab-button tab="speakers">
-        <ion-icon src="../../assets/icon/initiative/Activity.svg" siz="small"></ion-icon>
-      </ion-tab-button>
-  
-      <ion-tab-button tab="chart">
-        <ion-icon src="../../assets/icon/initiative/Charts.svg" siz="small"></ion-icon>
-      </ion-tab-button>
-  
-      <ion-tab-button tab="comments">
-        <ion-icon src="../../assets/icon/initiative/Comments.svg" siz="small"></ion-icon>
-      </ion-tab-button>
-  
-      <ion-tab-button tab="milestone">
-        <ion-icon src="../../assets/icon/initiative/Milestone.svg" siz="small"></ion-icon>
-      </ion-tab-button>
-  
-      <ion-tab-button tab="subinitiative">
-        <ion-icon src="../../assets/icon/initiative/Sub-Initiative.svg" siz="small"></ion-icon>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs> -->
+
 
   <ion-segment   [(ngModel)]="selectTabs" class="font">
     <ion-segment-button value="budget1" >
-      <ion-icon src="../../assets/icon/initiative/eye-outline .svg" siz="small"></ion-icon>
+      <ion-icon src="../../assets/icon/initiative/eye-outline .svg" size="small"></ion-icon>
     </ion-segment-button>
       <ion-segment-button value="budget" >
-      <ion-icon src="../../assets/icon/initiative/budget.svg" siz="small"></ion-icon>
+      <ion-icon src="../../assets/icon/initiative/budget.svg" size="small"></ion-icon>
     </ion-segment-button>
     <ion-segment-button value="sub_initiative" >
-      <ion-icon src="../../assets/icon/initiative/Sub-Initiative.svg" siz="small"></ion-icon>
+      <ion-icon src="../../assets/icon/initiative/Sub-Initiative.svg" size="small"></ion-icon>
 
       <!--<ion-icon src="../../assets/icon/initiative/Activity.svg" siz="small"></ion-icon>-->
     </ion-segment-button>
     <ion-segment-button value="chart" >
-      <ion-icon src="../../assets/icon/initiative/Charts.svg" siz="small"></ion-icon>
+      <ion-icon src="../../assets/icon/initiative/Charts.svg" size="small"></ion-icon>
     </ion-segment-button>
     <ion-segment-button value="activity">
-      <ion-icon src="../../assets/icon/initiative/Activity.svg" siz="small"></ion-icon>
+      <ion-icon src="../../assets/icon/initiative/Activity.svg" size="small"></ion-icon>
 
       <!--<ion-icon src="../../assets/icon/initiative/Comments.svg" siz="small"></ion-icon>-->
     </ion-segment-button>
     <ion-segment-button value="milestone">
-      <ion-icon src="../../assets/icon/initiative/Milestone.svg" siz="small"></ion-icon>
+      <ion-icon src="../../assets/icon/initiative/Milestone.svg" size="small"></ion-icon>
     </ion-segment-button>
     <ion-segment-button value="comments">
-      <ion-icon src="../../assets/icon/initiative/Comments.svg" siz="small"></ion-icon>
+      <ion-icon src="../../assets/icon/initiative/Comments.svg" size="small"></ion-icon>
 
       <!--<ion-icon src="../../assets/icon/initiative/Sub-Initiative.svg" siz="small"></ion-icon>-->
     </ion-segment-button>
+    <ion-segment-button value="budget2"  >
+      <ion-img src="../../assets/icon/Attachment.png" size="small" class="attach"></ion-img>
+    </ion-segment-button>
   </ion-segment>
-
-  <!-- <div *ngIf="selectTabs == 'camera'">
-    camera
-  </div>     -->
-
-
-<!-- <ion-grid>
-  <ion-row class="tab-icon" (click)="goBudget()">
-    <ion-col>
-      <ion-icon src="../../assets/icon/initiative/budget.svg" siz="md"></ion-icon>
-    </ion-col>
-    <ion-col>
-      <ion-icon src="../../assets/icon/initiative/Activity.svg" siz="md"></ion-icon>
-    </ion-col>
-    <ion-col>
-      <ion-icon src="../../assets/icon/initiative/Charts.svg" siz="md"></ion-icon>
-    </ion-col>
-    <ion-col>
-      <ion-icon src="../../assets/icon/initiative/Comments.svg" siz="md"></ion-icon>
-    </ion-col>
-    <ion-col>
-      <ion-icon src="../../assets/icon/initiative/Milestone.svg" siz="md"></ion-icon>
-    </ion-col>
-    <ion-col>
-      <ion-icon src="../../assets/icon/initiative/Sub-Initiative.svg" siz="md"></ion-icon>
-    </ion-col>
-  </ion-row>
-</ion-grid> -->
-
 
 
 
@@ -203,6 +152,74 @@
 
   <!-- customer influence -->
   <ion-grid class="top-curve font" *ngIf="selectTabs == 'budget1'">
+    <ion-row class="padding">
+      <ion-col size="9">
+        <ion-text class="top-text">Increase the influence of customer's view</ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="content-row">
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Initiaive id</p>
+          <p class="ion-text-center content_text">001</p>
+        </div>
+      </ion-col>
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Start Date</p>
+          <p class="ion-text-center content_text">jan 02,2020</p>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div >
+          <p class="title text_upper">End Date</p>
+          <p class="ion-text-center content_text">jan 02,2020</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="content-row">
+      <ion-col size="2" >
+      </ion-col>
+      <ion-col size="4">
+        <div class="border_right">
+          <p class="title text_upper">Remaining</p>
+          <p class="ion-text-center content_text">240 Days</p>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="border_right">
+          <p class="title text_upper ">Status</p>
+          <p class="status_col ion-text-center content_text">Good
+            <ion-icon  src="../../assets/icon/initiative/like.svg"></ion-icon>
+            <ion-icon  src="../../assets/icon/initiative/unlike.svg"></ion-icon>
+          </p>
+        </div>
+      </ion-col>
+      <ion-col size="2">
+      </ion-col>
+    </ion-row>
+
+    <!-- progress bar -->
+    <ion-row class="padding">
+      <ion-col>
+        <ion-label class="title text_upper font-bold">progress</ion-label>
+        <div class="progress_bar">
+          <ion-progress-bar value="0.5"></ion-progress-bar>80%
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row  class="padding">
+      <ion-col>
+        <ion-label class="title text_upper font-bold">impact</ion-label>
+        <p class="impact_txt">Maruis imperdiet orci dapibus, commodo libero nec</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- customer influence -->
+  <!-- customer influence -->
+  <ion-grid class="top-curve font" *ngIf="selectTabs == 'budget2'">
     <ion-row class="padding">
       <ion-col size="9">
         <ion-text class="top-text">Increase the influence of customer's view</ion-text>
@@ -686,7 +703,7 @@
       <ion-row class="comments_action">
         <p class="marg_0">Reply</p>
         <p class="marg_0">Like</p>
-        <p class="marg_0">Oct 11, 2020</p>
+        <p class="marg_0 font-weight">Oct 11, 2020</p>
       </ion-row>
     </ion-card>
 
@@ -708,7 +725,7 @@
       <ion-row class="comments_action">
         <p class="marg_0">Reply</p>
         <p class="marg_0">Like</p>
-        <p class="marg_0">Oct 11, 2020</p>
+        <p class="marg_0 font-weight">Oct 11, 2020</p>
       </ion-row>
     </ion-card>
     
@@ -731,7 +748,7 @@
       <ion-row class="comments_action">
         <p class="marg_0">Reply</p>
         <p class="marg_0">Like</p>
-        <p class="marg_0">Oct 11, 2020</p>
+        <p class="marg_0 font-weight">Oct 11, 2020</p>
       </ion-row>
     </ion-card>
        <ion-row>
@@ -770,7 +787,7 @@
                   <!--<span></span>-->
                 </ion-item>
             </ion-col>
-          <ion-col class="date ion-text-right ion-no-padding">
+          <ion-col class="date ion-text-right ion-no-padding font-weight">
             <p >Oct 11,2019-Oct 11,2020</p>
 
           </ion-col>
@@ -812,7 +829,7 @@
             <!--<span></span>-->
           </ion-item>
         </ion-col>
-        <ion-col class="date ion-text-right ion-no-padding">
+        <ion-col class="date ion-text-right ion-no-padding font-weight">
           <p >Oct 11,2019-Oct 11,2020</p>
 
         </ion-col>
@@ -843,7 +860,7 @@
             <!--<span></span>-->
           </ion-item>
         </ion-col>
-        <ion-col class="date ion-text-right ion-no-padding">
+        <ion-col class="date ion-text-right ion-no-padding font-weight">
           <p >Oct 11,2019-Oct 11,2020</p>
 
         </ion-col>
@@ -852,11 +869,11 @@
 
     </ion-card>
   </ion-grid>
+
   <!-- Chart  end -->
 
+<!--chart-->
 
-
-  
 </ion-content>
 
 <ion-footer class="ion-no-border" translucent>
